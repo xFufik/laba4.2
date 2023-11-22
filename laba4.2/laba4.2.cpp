@@ -13,15 +13,14 @@ int main() {
     setlocale(LC_ALL, "ru");
     double x;
     int n;
+    double res = 1;
+    double sum = 1;
 
     cout << "Введите значение X: ";
     cin >> x;
 
     cout << "Введите значение N: ";
     cin >> n;
-
-    double res = 1;
-    double sum = 1;
 
     for (int i = 1; i <= n; i++) {
         sum *= -x * x / (2 * i * (2 * i - 1));
